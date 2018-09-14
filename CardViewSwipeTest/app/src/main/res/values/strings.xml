@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CardViewSwipeTest</string>
+    <string name="dialog_alert_dialog">Are you sure to delete this sensor?</string>
+    <string name="discard">Discard</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
