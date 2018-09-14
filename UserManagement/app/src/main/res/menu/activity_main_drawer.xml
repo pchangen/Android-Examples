@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+    </group>
+    <item android:title="Data Mornitoring">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Gallery" />
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Slideshow" />
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Tools" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="User Managements">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_passwordChange"
+                android:icon="@drawable/ic_menu_key"
+                android:title="Password Change" />
+            <item
+                android:id="@+id/nav_deregistration"
+                android:icon="@drawable/ic_menu_error_outline"
+                android:title="User Deregistration" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_signOut"
+        android:icon="@drawable/ic_menu_clear"
+        android:title="Sign Out" />
+
+</menu>
