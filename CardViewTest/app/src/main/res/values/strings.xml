@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CardViewTest</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="air_quality_co">CO</string>
+    <string name="air_quality_so2">SO2</string>
+    <string name="air_quality_no2">NO2</string>
+    <string name="air_quality_o3">O3</string>
+    <string name="air_quality_pm">PM2.5</string>
+
+    <!--Label-->
+    <string name="user_air_quality">Real Time Air Quality</string>
+    <string name="air_quality_temp">Temperature</string>
+    <string name="real_time_map">Real Time Map</string>
+    <string name="heart_rate">Heart Rate</string>
+
+    <!--Real time dash board-->
+    <string name="none_sensor_btn">Sensor Managements</string>
+
+</resources>
