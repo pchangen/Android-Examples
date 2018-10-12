@@ -63,10 +63,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId, int markerColor, float zoomRate) {
         Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
-        int boundsSize = (int) (vectorDrawable.getIntrinsicHeight() *zoomRate);
-        vectorDrawable.setBounds(0, 0, boundsSize, boundsSize);
+        int boundHeight = (int) (vectorDrawable.getIntrinsicHeight() *zoomRate);
+        int boundWidth = (int) (vectorDrawable.getIntrinsicWidth() *zoomRate);
+        vectorDrawable.setBounds(0, 0, boundWidth, boundHeight);
         vectorDrawable.setTint(markerColor);
-        Bitmap bitmap = Bitmap.createBitmap(boundsSize, boundsSize, Bitmap.Config.ARGB_8888);
+        Bitmap bitmap = Bitmap.createBitmap(boundWidth, boundHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         vectorDrawable.draw(canvas);
         return BitmapDescriptorFactory.fromBitmap(bitmap);
